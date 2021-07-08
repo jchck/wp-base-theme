@@ -1,0 +1,15 @@
+/*
+  Transistions
+  @see https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+
+  Use:
+  @include transition($property, $speed, $timing, $delay);
+*/
+@mixin _transition (
+  $property: all,
+  $speed: 0.15s,
+  $timing: ease-in,
+  $delay: 0.0s
+  ) {
+  transition: $property $speed $timing $delay;
+}

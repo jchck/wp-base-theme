@@ -1,0 +1,13 @@
+.wysiwyg {
+    &--content {
+        p {
+            max-width: $measure-wide;
+            line-height: $line-height-copy;
+        }
+
+        ul {
+            max-width: $measure-wide;
+            line-height: $line-height-copy;
+        }
+    }
+}

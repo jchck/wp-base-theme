@@ -1,0 +1,39 @@
+.widget {
+    @include margin($spacing-large null);
+    
+    /*
+        The Widget Title
+    */
+    h3 {
+        font-size: $font-size-3;
+        @include margin($spacing-medium null);
+        line-height: $line-height-solid;
+    }
+
+    /*
+        Widget Types
+    */
+    &_search {}
+
+    &_text {}
+
+    &_nav_menu {
+        ul {
+            @include padding(null null null 0);
+            @include margin($spacing-medium null);
+            list-style: none;
+        }
+
+        li {}
+
+        a {
+            display: block;
+            @include padding($spacing-small $spacing-extra-small);
+            @include _transition();
+            &:hover {
+                background-color: $black-30;
+            }
+        }
+    }
+
+}

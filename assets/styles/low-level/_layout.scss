@@ -1,0 +1,4 @@
+.wrap {
+    @include margin(null auto);
+    max-width: $max-width-9;
+}

@@ -1,0 +1,24 @@
+.nav {
+    ul {
+        margin: 0
+    }
+    li {
+        display: inline-block;
+        font-size: $font-size-6;
+        @include margin( null $spacing-small );
+        @include mq(ns) {
+            font-size: $font-size-5
+        }
+        /*
+            Sub items will need to be displayed on hover of their parent
+        */
+        .sub-menu { display: none; }
+    }
+
+    &--footer {
+        a {
+            display: block;
+            @include padding( $spacing-small $spacing-extra-small );
+        }
+    }
+}

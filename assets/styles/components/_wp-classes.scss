@@ -1,0 +1,39 @@
+/*
+    WordPress generated classes
+    @see https://github.com/roots/sage/blob/8.6.0/assets/styles/components/_wp-classes.scss
+    @see https://codex.wordpress.org/CSS#WordPress_Generated_Classes
+*/
+.alignnone {
+    @include margin(null 0);
+    max-width: 100%;
+    height: auto;
+    }
+
+.aligncenter {
+    display: block;
+    margin: $spacing-medium auto;
+    height: auto;
+}
+
+figure.alignright,
+figure.alignleft {
+    margin-top: 0;
+    margin-bottom: $spacing-medium;
+    height: auto;
+}
+
+figure.alignright {
+    @include mq(ns) {
+        float: right;
+        margin-right: 0;
+        margin-left: $spacing-medium;
+    }
+}
+
+figure.alignleft {
+    @include mq(ns) {
+        float: left;
+        margin-right: $spacing-medium;
+        margin-left: 0;
+    }
+}

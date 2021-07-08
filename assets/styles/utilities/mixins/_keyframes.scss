@@ -1,0 +1,26 @@
+/*
+  Examples:
+  @see mixins/_loding-spinner.scss
+  or
+  @see components/_simple-social-share.scss
+*/
+@mixin _keyframes(
+  $animation-name: '',
+  $animation-duration: 2.0s,
+  $animation-timing-function: ease-in-out,
+  $animation-delay: 0.0,
+  $animation-iteration-count: infinite,
+  $animation-direction: normal
+) {
+  animation-name: $animation-name;
+  animation-duration: $animation-duration;
+  animation-timing-function: $animation-timing-function;
+  animation-delay: $animation-delay;
+  animation-iteration-count: $animation-iteration-count;
+  animation-direction: $animation-direction;
+  @at-root {
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+}

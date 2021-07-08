@@ -1,0 +1,47 @@
+/*
+    Low level type stuff
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $serif;
+    color: $black;
+    line-height: $line-height-title;
+}
+
+/*
+    Scale
+*/
+h1 {
+    font-size: $font-size-2;
+    @include mq(ns) {
+        font-size: $font-size-1;
+    }
+}
+h2 {
+    font-size: $font-size-3;
+    @include mq(ns) {
+        font-size: $font-size-2
+    }
+}
+h3 {
+    font-size: $font-size-4;
+    @include mq(ns) {
+        font-size: $font-size-3
+    }
+}
+h4 {
+    font-size:  $font-size-5;
+    @include mq(ns) {
+        font-size: $font-size-4;
+    }
+}
+body {
+    font-size: $font-size-5;        // 1.00rem
+    font-family: $sans-serif;
+    line-height: $line-height-copy;
+    color: $black;
+}

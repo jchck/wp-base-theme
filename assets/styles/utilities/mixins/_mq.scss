@@ -1,0 +1,21 @@
+/*
+  Use:
+  .class {
+    @include mq($breakpoint, $width) {
+      // styles scoped to this $breakpoint
+    }
+  }
+
+  Param $breakpoint MUST be registered in $breakpoints map in _base.scss
+  Param $witdh is optional, default is string val 'min-width'
+*/
+@mixin mq($breakpoint, $width: min-width) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (#{$width}: map-get($breakpoints, $breakpoint)) {
+            @content;
+          }    
+    }
+    @else {
+        @warn "Whoops! `#{$breakpoint}` isn't registered for use! Available breakpoints are: #{map-keys($breakpoints)}.";
+      }
+}
