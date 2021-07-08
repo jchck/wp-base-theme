@@ -44,3 +44,4 @@ $ npm install
 While the theme will work fine without these plugins, having them installed and active is highly recomended.
 1. [Soil](https://github.com/roots/soil)
 2. [Advanced Custom Fields](https://www.advancedcustomfields.com/)
+3. [Woocommerce](https://woocommerce.com/)

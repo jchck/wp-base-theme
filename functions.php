@@ -10,6 +10,7 @@ $base_includes = [
     'base/jquery',
     'base/sidebar',
     'base/titles',
+    'base/woocommerce',
     'base/wrapper',
     'base/filters',
     // add theme specific functions here
