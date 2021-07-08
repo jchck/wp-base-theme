@@ -24,7 +24,7 @@
     </main><!-- /.main -->
 
     <?php if (Sidebar\display_sidebar()) : ?>
-      <aside class="w-20">
+      <aside class="sidebar--aside w-20">
         <?php include Wrapper\sidebar_path(); ?>
       </aside><!-- /.sidebar -->
     <?php endif; ?>

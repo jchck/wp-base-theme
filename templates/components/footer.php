@@ -6,7 +6,7 @@
             endif;
         ?>
     </nav>
-    <div class="sidebar--footer">
+    <div class="sidebar--footer flex flex-wrap">
         <?php dynamic_sidebar('sidebar-footer'); ?>
     </div>
 </footer>

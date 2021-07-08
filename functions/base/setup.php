@@ -212,7 +212,7 @@ function register_widgets() {
 	]);
 
 	register_sidebar([
-		'name'          => __('Footer', 'sage'),
+		'name'          => __('Footer', 'base'),
 		'id'            => 'sidebar-footer',
 		'before_widget' => '<section class="widget %1$s %2$s">',
 		'after_widget'  => '</section>',
@@ -226,8 +226,6 @@ add_action( 'widgets_init', __NAMESPACE__ . '\\register_widgets' );
  * Front-end CSS & JS
  */
 function assets() {
-	// old css
-	// wp_enqueue_style( 'old_css', get_template_directory_uri() . '/assets/css/main.min.css', false, null );
 	// new css
 	wp_enqueue_style( 'base/css', get_template_directory_uri() . '/dist/css/index.css', false, null) ;
 
