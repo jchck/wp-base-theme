@@ -30,7 +30,7 @@ function watcher() {
 //   watch( 'assets/img/**/*', imgmin );
 };
 
-const build = parallel( styles, /*scripts, imgmin */);
+const build = parallel( styles, scripts/*, imgmin */);
 
 exports.styles = styles;
 exports.scripts = scripts;
